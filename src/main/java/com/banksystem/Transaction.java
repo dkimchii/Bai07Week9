@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 
 public class Transaction {
 
-   public static final int TYPE_DEPOSIT_CHECKING = 1;
+  public static final int TYPE_DEPOSIT_CHECKING = 1;
 
 
   public static final int TYPE_WITHDRAW_CHECKING = 2;
