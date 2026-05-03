@@ -24,11 +24,8 @@ jobs:
       - name: Run Maven Test and Package
         run: mvn -B clean test package
 
-      - name: Checkstyle Analysis
-        if: success()
-        uses: dbelyaev/action-checkstyle@v0_1_8
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run Checkstyle Analysis
+        run: mvn checkstyle:checkstyle
 
       - name: Upload Artifact
         if: success()
